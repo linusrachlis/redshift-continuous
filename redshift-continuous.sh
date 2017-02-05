@@ -20,7 +20,7 @@ EVENING=3400
 BEDTIME=1900
 
 arith_exec () {
-    $(echo "scale=1; $1" | bc)
+    echo "scale=1; $1" | bc
 }
 
 set_raw_temp () {
