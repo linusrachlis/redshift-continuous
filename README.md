@@ -1,3 +1,5 @@
+  Note, the Redshift author has implemented a new feature for custom dawn/dusk times (https://github.com/jonls/redshift/pull/529), which will make this script obsolete.
+
 # Cron script for continuous Redshifting at arbitrary times
 
 This is designed to work with Redshift: https://github.com/jonls/redshift
