@@ -43,7 +43,7 @@ In `~/.config/systemd/user/redshift-continuous.timer`:
     
     [Timer]
     # Every 5 minutes:
-    OnUnitActiveSec=5m
+    OnCalendar=*-*-* *:00,05,10,15,20,25,30,35,40,45,50,55:00
     
     [Install]
     WantedBy=timers.target
@@ -52,7 +52,6 @@ Now, run the following commands to make it all work:
 
 ```sh
 systemctl --user daemon-reload
-systemctl --user enable redshift-continuous.service
 systemctl --user enable redshift-continuous.timer
 ```
 
