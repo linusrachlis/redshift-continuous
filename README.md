@@ -50,7 +50,7 @@ Description=Run redshift-continuous.service every 5 minutes
 
 [Timer]
 # Every 5 minutes:
-OnCalendar=*-*-* *:00,05,10,15,20,25,30,35,40,45,50,55:00
+OnCalendar=*:0/5
 
 [Install]
 WantedBy=timers.target
